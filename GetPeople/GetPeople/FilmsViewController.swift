@@ -14,37 +14,29 @@ class FilmsViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let url = URL(string: "http://swapi.co/api/films/")
-        let session = URLSession.shared
-        
-        let task = session.dataTask(with: url!, completionHandler: {
+        StarWarsModelFilms.getAllFilms(completionHandler: {
             data, response, error in
-            do {
-                if let jsonResult = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSDictionary {
+                do {
+                    if let jsonResult = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSDictionary {
                     
-                    if let results = jsonResult["results"] as? NSArray {
-                        for film in results {
-                            let filmDict = film as! NSDictionary
+                        if let results = jsonResult["results"] as? NSArray {
+                            for film in results {
+                                let filmDict = film as! NSDictionary
                             
-                            self.films.append(filmDict["title"]! as! String)
+                                self.films.append(filmDict["title"]! as! String)
+                            }
                         }
                     }
-                }
                     //speeds up the loading time of data ******
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
+                    DispatchQueue.main.async {
+                        self.tableView.reloadData()
+                    }
 
-            }catch {
-                print(error)
-                
-            }
-            
-        })
-        
-        task.resume()
-    }
+                }catch {
+                    print(error)
+                }
+            })
+        }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
