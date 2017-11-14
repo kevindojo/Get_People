@@ -37,7 +37,6 @@ class PeopleViewController: UITableViewController {
 
                     }
                 }
-                
                 self.tableView.reloadData()
             } catch {
                 print(error)

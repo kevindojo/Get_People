@@ -14,6 +14,7 @@
 		37E5E8A41FBB71450007F2C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E5E8A31FBB71450007F2C2 /* Assets.xcassets */; };
 		37E5E8A71FBB71450007F2C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37E5E8A51FBB71450007F2C2 /* LaunchScreen.storyboard */; };
 		37E5E8B21FBB71450007F2C2 /* GetPeopleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E5E8B11FBB71450007F2C2 /* GetPeopleUITests.swift */; };
+		37F20C821FBB9FC300A9F11A /* FilmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F20C811FBB9FC300A9F11A /* FilmsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		37E5E8AD1FBB71450007F2C2 /* GetPeopleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetPeopleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37E5E8B11FBB71450007F2C2 /* GetPeopleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPeopleUITests.swift; sourceTree = "<group>"; };
 		37E5E8B31FBB71450007F2C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37F20C811FBB9FC300A9F11A /* FilmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		37E5E88D1FBB71450007F2C2 = {
 			isa = PBXGroup;
 			children = (
+				37F20C811FBB9FC300A9F11A /* FilmsViewController.swift */,
 				37E5E8981FBB71450007F2C2 /* GetPeople */,
 				37E5E8B01FBB71450007F2C2 /* GetPeopleUITests */,
 				37E5E8971FBB71450007F2C2 /* Products */,
@@ -204,6 +207,7 @@
 			files = (
 				37E5E89C1FBB71450007F2C2 /* PeopleViewController.swift in Sources */,
 				37E5E89A1FBB71450007F2C2 /* AppDelegate.swift in Sources */,
+				37F20C821FBB9FC300A9F11A /* FilmsViewController.swift in Sources */,
 				37E5E8A21FBB71450007F2C2 /* GetPeople.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
