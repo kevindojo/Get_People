@@ -63,7 +63,6 @@
 		37E5E88D1FBB71450007F2C2 = {
 			isa = PBXGroup;
 			children = (
-				37F20C811FBB9FC300A9F11A /* FilmsViewController.swift */,
 				37E5E8981FBB71450007F2C2 /* GetPeople */,
 				37E5E8B01FBB71450007F2C2 /* GetPeopleUITests */,
 				37E5E8971FBB71450007F2C2 /* Products */,
@@ -84,6 +83,7 @@
 			children = (
 				37E5E8991FBB71450007F2C2 /* AppDelegate.swift */,
 				37E5E89B1FBB71450007F2C2 /* PeopleViewController.swift */,
+				37F20C811FBB9FC300A9F11A /* FilmsViewController.swift */,
 				37E5E89D1FBB71450007F2C2 /* Main.storyboard */,
 				37E5E8A31FBB71450007F2C2 /* Assets.xcassets */,
 				37E5E8A51FBB71450007F2C2 /* LaunchScreen.storyboard */,

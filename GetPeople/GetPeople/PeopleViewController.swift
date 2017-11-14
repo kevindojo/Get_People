@@ -37,15 +37,20 @@ class PeopleViewController: UITableViewController {
 
                     }
                 }
-                self.tableView.reloadData()
+                
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+                
             } catch {
-                print(error)
+                print("=======something went wrong=======")
             }
         })
         
         // execute the task and then wait for the response
         // to run the completion handler. This is async!
         task.resume()
+        print("======Happens before the response=====")
     }
     
     

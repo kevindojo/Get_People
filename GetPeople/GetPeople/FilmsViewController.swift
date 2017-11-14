@@ -31,7 +31,11 @@ class FilmsViewController: UITableViewController {
                         }
                     }
                 }
-                self.tableView.reloadData()
+                    //speeds up the loading time of data ******
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+
             }catch {
                 print(error)
                 
